@@ -14,44 +14,20 @@ However, in 2018 DQ’s performance significantly plummeted to a **-62.6%** maki
 
 ![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/Analysis%20for%202018%20Stocks.png "Analysis for 2018 Stocks")
 
-The analysis was programmed in VBA, the first macro was a thorough step-by-step progress of the code needed to analyze the data of both years, not taking into consideration efficiency and performance of the code. As you will see in the screenshots below, the running time is significantly longer to run, which is not the most ideal for larger data sets. 
+The analysis was programmed in VBA, the first script was a thorough step-by-step progress of the code needed to analyze the data of both years, not taking into consideration efficiency and performance of the code. As you will see in the screenshots below, the running time is significantly longer, which is not the most ideal for larger data sets. 
 
 ![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/Run%20Time%20on%20Original%20Code%202017.png "Run Time on Original Code 2017")
 
 ![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/Run%20Time%20on%20Original%20Code%202018.png "Run Time on Original Code 2018")
 
-### Analysis of Outcomes Based on Launch Date
+Once the script was refactored to run in a single macro, we were able to reduce the run time which will help Steve run his future analysis more efficiently when the datasets are much larger. The screenshots below show that for both 2017 and 2018 the run time has decreased to 0.20sec respectively. 
 
-Based on the data we had on theatre fundraisers we created a pivot table to filter by successful, failed and cancelled fundraisers based on the month. Once the chart was generated, we were able to observe that campaigns launched during the summer months had a higher success rate compared to the rest of the year. The line graph can be referenced below:
+![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png "VBA_Challenge_2017")
 
-![alt text](https://github.com/Karenjakins/kickstarter-analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png "Outcomes Based on Launched Date")
+![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png "VBA_Challenge_2018")
 
-### Analysis of Outcomes Based on Goals
+## **Summary**
 
-For the analysis on Outcomes Based on Goals, we observed that the if the goal amount is within less than $1000 and up to $14999 the success rate is higher, and the number of failed fundraisers is low. Please reference the line graph below:
+Overall there are clear advantages to refactoring code for this analysis, it not only saves processing time, it also makes the VBA macro screen look more structured, easier to read and functional. However, the process does take a higher degree of understanding of the logic and functions of the programming language which can be hard to comprehend as a beginner, it certainly was more time consuming as one needs to figure out ways to simplify the script written initially. I believe with practice and perhaps more clear instructions refactoring is the best and most efficient method. 
 
-![alt text](https://github.com/Karenjakins/kickstarter-analysis/blob/main/Resources/Outcomes_vs_Goals.png "Outcomes Based on Goal")
-
-### Challenges and Difficulties Encountered
-
-The biggest challenge I had was when conducting the analysis of Outcomes Based on Goals, when I entered the formula for **=COUNTSIFS** as I entered the wrong angle brackets which provided me with the wrong values. I spent a few hours trying to figure what was wrong so this actually wasted a lot if my time, so next time I will make sure to be more careful when entering my formulas. 
-
-The second challenge was that at some point during the analysis I must have entered or altered some of the values on my spreadsheet and as a result I got the wrong values on one of my tables, so it’s very important to save your progress as you go in separate files to make sure you don’t have to do the ensure process from the beginning. 
-
-## **Results**
-
-- What are two conclusions you can draw about the Outcomes based on Launch Date? 
-
-Based on the data collected for Theatre Outcomes by Launch Date we can observe that fundraisers launched during the months of April to September have a greater success rate than at any other time during the year. This most likely can be that the summer months are better times to run campaigns are people are more interested in investing in activities. 
-
-- What can you conclude about the Outcomes based on Goals?
-
-Fundraisers with a goal lower than $15,000 tend to be more successful as the amount gets lower, the most successful being a 76% success rate for campaigns under $1000. 
-
-- What are some limitations of this dataset?
-
-There isn’t any data on the demographics of the people who pledged in the fundraiser, perhaps if we knew more about the investors, we could also know how to cater campaigns to target goals based on specific ages groups and interests. 
-
-- What are some other possible tables and/or graphs that we could create?
-
-We could create a table that displays the genre of the play and then create a graph that shows the correlation of success rate based on the genre. 
+The notes provided as guidance for the final VBA script certainly made the process simpler, and were a useful guide to achieve the end results. Adding notes to code can certainly clarify the process for future endeavours but an understanding of the logic and functions certainly always needs to be the case for refactoring script to be the most useful. 
