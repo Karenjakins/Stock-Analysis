@@ -14,7 +14,11 @@ However, in 2018 DQ’s performance significantly plummeted to a **-62.6%** maki
 
 ![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/Analysis%20for%202018%20Stocks.png "Analysis for 2018 Stocks")
 
-As for her fundraising goal, we used descriptive statistics to help Louise pick a fundraising amount by finding the median of goal and pledged amounts of successful theatre campaigns so that Louise can pick a realistic amount. 
+The analysis was programmed in VBA, the first macro was a thorough step-by-step progress of the code needed to analyze the data of both years, not taking into consideration efficiency and performance of the code. As you will see in the screenshots below, the running time is significantly longer to run, which is not the most ideal for larger data sets. 
+
+![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/Run%20Time%20on%20Original%20Code%202017.png "Run Time on Original Code 2017")
+
+![alt text](https://github.com/Karenjakins/stock-analysis/blob/main/Resources/Run%20Time%20on%20Original%20Code%202018.png "Run Time on Original Code 2018")
 
 ### Analysis of Outcomes Based on Launch Date
 
